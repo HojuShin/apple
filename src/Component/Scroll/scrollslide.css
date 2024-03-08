@@ -1,0 +1,111 @@
+.article-1 {
+    height: 100vh;
+    padding: 200px 0;
+}
+
+.VisionPro_item02 {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    /* 마진 변화에 대한 부드러운 애니메이션 효과 설정 */
+    transition: margin-left 1s ease-in-out;
+}
+
+.item-desc {
+    position: relative;
+    height: 100%;
+}
+
+.image-container {
+    /* 이미지가 이동될 때 부모 요소에 대해 상대적으로 배치. */
+    position: relative;
+    /* 가로 스크롤 가능. */
+    overflow-x: auto;
+    /* 요소 내부의 내용이 줄 바꿈 방지. */
+    white-space: nowrap;
+    /* 이미지를 감싸는 컨테이너에서의 오버플로우 설정 */
+    overflow: visible;
+    /* 부모 요소의 너비를 자동으로 설정하여 이미지가 화면을 넘어서도 오른쪽으로 이동 가능. */
+    width: auto;
+    /* 초기에는 이미지를 왼쪽으로 이동 금지. */
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.animation {
+    margin-left: 25vw;
+}
+
+.animation-desc {
+    /* 초기에는 투명 상태로 시작 */
+    opacity: 0;
+    /* 투명도에 대한 transition 효과 설정 */
+    transition: opacity 5s ease;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    /* 상단을 화면의 중앙으로 위치. */
+    top: 50%;
+    /* 요소를 수직 방향으로 가운데 정렬. */
+    transform: translateY(-50%);
+    margin-left: 1vw;
+}
+
+.animation-desc.show {
+    opacity: 1;
+}
+
+.desc-title {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+.desc-text {
+    color: rgb(99, 99, 102);
+    margin: 0;
+    font-size: 1vw;
+}
+
+.animation-desc-02 {
+    /* 초기에는 투명 상태로 시작 */
+    opacity: 0;
+    transition: opacity 5s ease;
+    text-align: left;
+    position: absolute;
+    margin-left: 49vw;
+    bottom: 5vh;
+    transform: translateY(50%);
+}
+
+.animation-desc-02.show {
+    opacity: 1;
+}
+
+.horizontality {
+    opacity: 0;
+    transition: opacity 5s ease;
+    width: 8vw;
+    height: 1px;
+    background: white;
+    position: absolute;
+    margin-left: 18.5vw;
+    bottom: 54vh;
+}
+
+.line {
+    opacity: 0;
+    transition: opacity 7s ease;
+    width: 1px;
+    height: 17vh;
+    background: white;
+    position: absolute;
+    margin-left: 54vw;
+    bottom: 19vh;
+    transform: translateY(50%);
+}
+
+.line.show,
+.horizontality.show {
+    opacity: 1;
+}
