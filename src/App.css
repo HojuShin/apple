@@ -7,117 +7,187 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+  .globalNav-list:not(:nth-child(4)) {
+    display: block;
+  }
 
-.article-0 {
-  height: 100vh;
+@media (min-width: 1024px) {
+
+  .article-0 {
+    height: 100vh;
+  }
+  
+  .globalNav {
+    height: 44px;
+    padding: 10px 1rem;
+  }
+  
+  .globalNav-link {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .globalNav-list {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    transform: 0.2s all;
+  }
+  
+  .globalNav-list:hover {
+    color: rgb(99, 99, 102);
+  }
+  
+  .globalNav-list:not(:nth-child(4)) {
+    display: none;
+  }
+  
+  .globalNav-logo path {
+    fill: white;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .VisionPro_logo {
+    width: 30%;
+  }
+  
+  .VisionPro_item {
+    max-width: 56%;
+    height: auto;
+  }
+  
+  .modelling-section {
+    height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
+    background-color: white;
+    color: black;
+    position: relative;
+  }
+  
+  .modelling {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 50px; */
+    align-items: center;
+    height: 100%;
+  }
+  
+  .apple_logo {
+    width: 120px;
+  }
+  
+  .VisionPro_logo2 {
+    width: 16rem;
+  }
+  
+  .modelling-desc>p {
+    font-size: 1.4vw;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+  }
+  
+  .modelling-desc>h2 {
+    font-size: 2.7vw;
+    margin: 0;
+  }
+  
+  .modelling-position {
+    padding: 1vw 0;
+    position: relative;
+  }
+  
+  #modellingBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    background: #268df4;
+    border: none;
+    border-radius: 44px;
+    height: 1vw;
+    cursor: pointer;
+    padding: 1.6vw 0;
+    position: absolute;
+    bottom: 5rem;
+    left: 38%;
+    transform: translateX(50%);
+  }
+  
+  #modellingBtn>p {
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .product {
+    background-color: white;
+    width: 38vw;
+    height: 36vw;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .closeBtn {
+    width: auto;
+    margin: 0 18vw;
+    float: left;
+  }
+  
+  .closeBtn>svg {
+    background: #F3F3F3;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  #footer {
+    background: #F3F3F3;
+    letter-spacing: -0.02em;
+  }
+
+  .footer-section {
+    height: 100%;
+    color: black;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .globalNav-logo-footer path {
+    fill: black ;
+  }
+
+  .globalNav-logo-footer>svg {
+    width: 30px;
+    height: 34px;
+  }
+
+  .footer-middle,
+  .footer-bottom {
+    color: rgb(99, 99, 102);
+  }
 }
 
-.globalNav {
-  height: 44px;
-  padding: 10px 1rem;
-}
 
-.globalNav-link {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.globalNav-list {
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  transform: 0.2s all;
-}
-
-.globalNav-list:hover {
-  color: rgb(99, 99, 102);
-}
-
-.globalNav-list:not(:nth-child(4)) {
-  display: none;
-}
-
-.globalNav-logo path {
-  fill: white;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.VisionPro_logo {
-  width: 30%;
-}
-
-.VisionPro_item {
-  max-width: 56%;
-  height: auto;
-}
-
-.modelling-section {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  color: black;
-}
-
-.modelling {
-  display: flex;
-  flex-direction: column;
-  justify-content: center ;
-  gap: 50px;
-  align-items: center;
-  height: 100%;
-}
-
-.apple_logo{
-  width: 5rem;
-}
-
-.VisionPro_logo2{
-  width: 12rem;
-}
-
-.modelling-desc>h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-#modellingBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 22vw;
-  border: 3px solid black;
-  border-radius: 44px ;
-  height: 3vw;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-  padding: 2vw 0;
-}
-
-#modellingBtn>p {
-  font-size: 2rem;
-}
-
-.product{
-  background-color: white;
-  width: 30%;
-}
-
-#footer {
-  height: 50vh;
-  background: #F3F3F3;
-}
 
 @media (min-width: 1024px) {
   .globalNav-list:not(:nth-child(4)) {
