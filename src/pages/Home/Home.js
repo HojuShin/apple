@@ -3,8 +3,17 @@ import VisionPro_item from '../../assets/item01.png'
 import ScrollSlide from '../../Component/Scroll/ScrollSlide';
 import logo from '../../assets/logo.png';
 import product from '../../assets/vison.jpg';
+import product2 from '../../assets/제목 없음.png';
+import Models from '../../Component/Models/Models';
+import { useState } from 'react';
 
 export default function Home() {
+  const [modal, setmodal] = useState(false);
+
+  const open = () => {
+    setmodal(!modal);
+  }
+
   return (
     <div className="App">
       <div className='container'>
@@ -49,13 +58,17 @@ export default function Home() {
               className='product'>
             </img>
             <div className='modelling-btn'>
-              <button type='button' id='modellingBtn'>
+              <button type='button' id='modellingBtn'
+              onClick={open}>
                 <p>Click</p>
               </button>
             </div>
           </div>
         </div>
       </div>
+
+    {modal ? <Models /> : ''}
+
 
       <footer id='footer'>
         {/* 내용 추가 */}
