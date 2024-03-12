@@ -15,15 +15,16 @@ html {
 }
 
 body {
-  background: white;
-  color: rgb(29, 29, 31);
+  background-color: black;
+  color: white;
+  /* background: rgb(29, 29, 31); */
   overflow-x: hidden;
   /* 자간 줄이기 */
   letter-spacing: -0.05em;
 }
 
 a {
-  color: rgb(29, 29, 31);
+  color: white;
   text-decoration: none;
 }
 

@@ -4,6 +4,7 @@
 }
 
 .VisionPro_item02 {
+    position: 'absolute';
     width: 100%;
     height: 100vh;
     left: 0;
@@ -95,7 +96,7 @@
 
 .line {
     opacity: 0;
-    transition: opacity 7s ease;
+    transition: opacity 5s ease;
     width: 1px;
     height: 17vh;
     background: white;
@@ -108,4 +109,28 @@
 .line.show,
 .horizontality.show {
     opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .article-1 {
+        padding: 135px 0;
+        height: 100%;
+    }
+
+    .horizontality,
+    .animation-desc,
+    .line,
+    .animation-desc,
+    .animation-desc-02 {
+        display: none;
+    }
+
+    .animation {
+        margin-left: 0px;
+    }
+
+    .VisionPro_item02 {
+        height: auto;
+        position: static;
+    }
 }

@@ -49,8 +49,7 @@ export default function Home() {
                 alt='appleLogo'
                 className='apple_logo'>
               </img>
-              <p>Apple 최초의 공간 컴퓨터</p>
-              <h2>3D 모델링을 통해 <img src={VisionPro_logo} alt='VisionPro_logo' className='VisionPro_logo2'></img> 를 탐색해보세요</h2>
+              <h2>3D 모델링을 통해<br/> <img src={VisionPro_logo} alt='VisionPro_logo' className='VisionPro_logo2'></img> 를 탐색해보세요</h2>
             </div>
             <img
               src={product}

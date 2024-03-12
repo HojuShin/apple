@@ -30,7 +30,6 @@ export default function ScrollSlide() {
                     <img
                         src={VisionPro_item02}
                         alt='VisionPro'
-                        style={{ position: 'absolute' }}
                         className={`VisionPro_item02 ${scrollPosition > 500 && scrollPosition <= 1700 ? 'animation' : ''}`}></img>
                 </div>
                   <div className={`horizontality ${scrollPosition > 500 && scrollPosition <= 1700 ? 'show' : 'horizontality'}`}></div>
