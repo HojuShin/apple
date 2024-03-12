@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/apple/static/css/main.254b9be5.css",
+    "main.js": "/apple/static/js/main.dd925f59.js",
+    "static/js/453.fa7abe88.chunk.js": "/apple/static/js/453.fa7abe88.chunk.js",
+    "static/media/item02.png": "/apple/static/media/item02.6ed3d69e821fd529dacb.png",
+    "static/media/logo.png": "/apple/static/media/logo.e4673d322db002e84ee4.png",
+    "static/media/item01.png": "/apple/static/media/item01.617b94d1ee724904310e.png",
+    "static/media/vison.jpg": "/apple/static/media/vison.8d3e00a51622e3dcee33.jpg",
+    "static/media/visionprologo.png": "/apple/static/media/visionprologo.05d968199e1d624ea268.png",
+    "index.html": "/apple/index.html",
+    "main.254b9be5.css.map": "/apple/static/css/main.254b9be5.css.map",
+    "main.dd925f59.js.map": "/apple/static/js/main.dd925f59.js.map",
+    "453.fa7abe88.chunk.js.map": "/apple/static/js/453.fa7abe88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.254b9be5.css",
+    "static/js/main.dd925f59.js"
+  ]
+}
